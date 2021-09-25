@@ -2,7 +2,7 @@
 setwd("/media/paulo/DISC2/PUC/5 INTRODUCAO LINGUAGEM R/SCRIPTS/")
 
 
-# Limpeza, Transformaćão e Manipulaćão de Dados
+# Limpeza, Transformação e Manipulação de Dados
 
 install.packages('dplyr')
 install.packages('tidyr')
@@ -18,7 +18,7 @@ sonodf = read.csv('sono.csv')
 View(sonodf)
 str(sonodf)
 
-# Funcão glimpse() pode ser usado no lugar da func str()
+# Função glimpse() pode ser usado no lugar da func str()
 glimpse(sonodf)
 
 # aplicando a func mutation()
@@ -89,39 +89,3 @@ sonodf %>%
             total = n())  
 
 
-## Prova
-w <- c(2, 7, 8)
-v <- c("A", "B", "C")
-x <- list(w, v)
-
-x[[2]][1] <- "K"
-x
-
-x[[1]][2] <- "K"
-x
-
-M=matrix(c(1:10),nrow=5,ncol=2, dimnames=list(c('a','b','c','d','e'),c('A','B')))
-M['e', 'A'] 
-
-M=matrix(c(1:9),3,3,byrow=T, dimnames=list(c('a','b','c'),c('d','e','f')))
-rownames(M)
-
-x = 3
-dobro = function(x){x+x}
-dobro
-
-x = 5
-while (x < 10){
-  x  = x + 1
-  print(x)
-}
-
-?plot
-
-u = 8
-v = 9
-z = u > v
-z
-
-ista1 <- list(a=(1:20), b=(45:77))
-sapply(ista1, sum)
