@@ -1,15 +1,15 @@
-#OPERADORES
+# OPERADORES
 
-#POTENCIA
+# POTENCIA
 8^2
 8**2
 
-#MODULO
+# MÓDULO
 8%%3
 
 ### OPERADORES RELACIONAIS
 
-# ATRIBUIĆÃO
+# ATRIBUIÇÃO
 Z = 9
 X <- 2
 mode(x)
@@ -26,16 +26,16 @@ class(ma)
 length(ma)
 dim(ma)
 
-#Criando matriz diagonal
+# Criando matriz diagonal
 elementos = c(1,2,3,1,5,8,4,8,9)
 diag(elementos)
 
-#criando uma matriz transposta
+# Criando uma matriz transposta
 t(ma)
-ma #Matriz origem
+ma #  Matriz origem
 t(ma1)
 
-#Matriz inversa
+# Matriz inversa
 matriz1 <- matrix(1:4, ncol = 2, nrow = 2)
 matriz1
 matriz1_solve <- solve(matriz1)
@@ -65,10 +65,10 @@ matriz1 * vetor
 print("Multiplicaćão matricial")
 matriz1 %*% matriz2
 
-# Nomeando dimensoes (linhas e colunas) da matriz1
+# Nomeando dimensões (linhas e colunas) da matriz1
 dimnames(matriz1) <- (list(c('lin1', 'lin2'), c('col1', 'col2'))) ; matriz1
 
-# Combinacoes entra matrizes
+# Combinações entra matrizes
 cbind(matriz1, matriz2)
 rbind(matriz1, matriz2)
 
