@@ -5,9 +5,6 @@ getwd()
 
 #Expressòes regulares
 
-# Expresões regurales é um padrão, onde determinamos 
-# um padrão e o buscamos dentro de um texto
-
 # grep()
 # grepl()
 # sub()
