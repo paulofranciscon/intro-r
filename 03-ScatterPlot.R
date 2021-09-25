@@ -1,14 +1,14 @@
-#ScattePlots - gráficos de dispersão
+# ScattePlots - gráficos de dispersão
 
-# mostra a relaćão entre duas variáveis
+# mostra a relação entre duas variáveis
 # variável dependente X variavel independente
 # peso X altura
-# numero de quartos X prećo do imóvel
+# número de quartos X preço do imóvel
 
-#Fixando a semente
+# Fixando a semente
 set.seed(24)
 
-#Gerando valores randomicos
+# Gerando valores randômicos
 x = rnorm(10, 8, 10)
 y = rpois(10, 10)
 z = rnorm(10, 6, 7)
@@ -19,7 +19,7 @@ plot(x, y, col='blue', pch=4, main = 'ScatterPlot',
      col.main='blue', cex.main=1.5, xlab='Variável X',
      ylab='Variável Y')
 
-#Acrescentando dados, multiplas relaćões 
+# Acrescentando dados, múltiplas relações 
 points(z,t,col='red', pch=10)
 points(y,t,col='black', pch=9)
 
