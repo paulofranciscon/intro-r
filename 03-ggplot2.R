@@ -3,7 +3,7 @@
 
 # Sistema gráfico completo, alternativo ao sistema básico de graficos do R.
 # Muito poderoso que o sistema báscio de plotagem. Com isso o nível de complexidade
-# é um pouco maior. Mais općões de modificaćão, legendas prontas e formataćão mais sólida
+# é um pouco maior. Mais opções de modificaćão, legendas prontas e formatação mais sólida
 
 setwd('/media/paulo/DISC2/PUC/5 INTRODUCAO LINGUAGEM R/SCRIPTS/')
 
@@ -16,10 +16,10 @@ install.packages("reshape2")
 data(tips, package='reshape2')
 View(tips)
 
-#Criando um gráfico básico
+# Criando um gráfico básico
 qplot(total_bill, tip, data=tips, geom="point")
 
-#Construindo camadas
+# Construindo camadas
 camada1 = geom_point(
   mapping = aes(x=total_bill, y=tip, color=sex), #argumento mapping que vai descrever a relaćão do smeus dados
   data=tips,
@@ -39,7 +39,7 @@ modelo_fit = data.frame(
 
 head(modelo_fit)
 
-#Camada2
+# Camada2
 camada2 = geom_line(
   mapping = aes(x=total_bill, y= fit),
   data=modelo_fit,
