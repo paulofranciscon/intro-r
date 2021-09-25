@@ -1,14 +1,14 @@
 #Data Frames
 
-#Configuracão do diretorio
+#Configuração do diretório
 setwd("/media/paulo/DISC2/PUC/5 INTRODUCAO LINGUAGEM R/SCRIPTS/")
 getwd()
 
-#Vetor, matriz e array trabalham apenas com um tipo de dado
-#DataFrame: matriz com diferente tipos de dados
-#Mais comum tipo de dados utilizado em análise de dados
+# Vetor, matriz e array trabalham apenas com um tipo de dado
+# DataFrame: matriz com diferente tipos de dados
+# Mais comum tipo de dados utilizado em análise de dados
 
-# dataFrame bult in do R
+# DataFrame bultin do R
 View(iris)
 length(iris)
 dim(iris)
@@ -47,18 +47,18 @@ df = data.frame(c(aluno, disciplina, nota))
 df
 
 
-#adicionando uma nova coluna
+# Adicionando uma nova coluna
 comportamento = c('bom', 'regular', 'otimo', 'bom', 'otimo', 'otimo')
 novo_df = cbind(df, comportamento)
 novo_df
 
-#Extraindo um vetor
+# Extraindo um vetor
 df$nota
 
-#extraindo um valor
+# Extraindo um valor
 df[3,2]
 
-#Lendo um arquivos CSV
+# Lendo um arquivos CSV
 vgsales = read.csv(file='vgsales.csv', header=TRUE, sep=',')
 df_vgsales = data.frame(vgsales)
 
@@ -66,6 +66,6 @@ View(df_vgsales)
 head(df_vgsales)
 summary(df_vgsales)
 
-#Construindo graficos
+# Construindo gráficos
 hist(vgsales$EU_Sales)
  
