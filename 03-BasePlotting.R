@@ -1,14 +1,13 @@
-# Unidade3
 
 setwd("/media/paulo/DISC2/PUC/5 INTRODUCAO LINGUAGEM R/SCRIPTS/")
 getwd()
 
-#Graficos com o Base Plotting System 
+#Gráficos com o Base Plotting System 
 
 #Lista os pacotes básicos
 search()
 
-#Demonstraćão
+#Demonstração
 demo(graphics)
 
 x = 1:10
@@ -32,7 +31,7 @@ plot(lynx, main='Título e cor no grafico', col='blue')
 library(datasets)
 hist(warpbreaks$breaks)
 
-#Parametros
+#Parâmetros
 # col - cor 
 # lty - tipo de linha
 # lwd - largura da linha
@@ -44,7 +43,7 @@ hist(warpbreaks$breaks)
 # mfrow - numeor de plots por linha
 # mfcool - numeor de plots por coluna
 
-# Funćões básicas de plot
+# Funções básicas de plot
 # plot() - scatterplot
 # lines() - adiciona linhas ao grafico
 # points() - adiciona pontos ao gráfico
@@ -62,7 +61,7 @@ par(mfrow=c(1,1))
 
 ?par
 
-# Salvando graficos
+# Salvando gráficos
 
 # Formato PNG
 png('grafico_png', width = 500, height = 500, res = 72)
