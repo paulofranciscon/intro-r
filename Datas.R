@@ -3,7 +3,7 @@
 setwd("/media/paulo/DISC2/PUC/5 INTRODUCAO LINGUAGEM R/SCRIPTS/")
 getwd
 
-#Manipulaćão em datas
+#Manipulação em datas
 
 hoje = Sys.Date()
 hoje
