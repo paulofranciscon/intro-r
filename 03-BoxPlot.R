@@ -40,4 +40,3 @@ boxplot(data= sleep, extra ~ group,
         horizontal = TRUE,
         col = c('ORANGE', 'CYAN')
         )
-# note que trabalhamos camada a camada
